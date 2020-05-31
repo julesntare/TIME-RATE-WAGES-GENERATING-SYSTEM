@@ -1,0 +1,24 @@
+body
+{
+background-image: url(../images/g.jpg);
+background-size: cover;
+background-repeat: no-repeat;  
+}
+input[type='text'],input[type='email'],input[type='password']
+{
+	box-shadow: rgb(12,50,88);
+	border-width: 0px;
+	height: 30px;
+}
+input[type='submit'],input[type='reset']
+{
+	background: rgb(61,61,80);
+	cursor: pointer;
+	border-radius: 10px;
+	height: 30px;
+	width: 120px;
+}
+.adm
+{
+	font-size: 35px;
+}

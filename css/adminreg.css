@@ -1,0 +1,88 @@
+.adlog {
+  background-image: url(../images/background.jpg);
+  width: 940px;
+  height: 624px;
+  position: relative;
+  left: 205px;
+  top: -4px;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+}
+.ban
+{
+  width: 934px;
+  height: 170px;
+  position: relative;
+  top: 4px;
+  left: 3px;
+  border-radius: 3px;
+}
+.div
+{
+  width: 800px;
+  height: 337px;
+  border-radius:3px;
+  background-image: url('../images/gg.jpg');
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 215px;
+  left: 75px;
+  z-index: 2;
+}
+label
+{
+  font:italic small-caps bold 1px georgia;
+  font-size: 15px;
+  font-color:rgb(7,16,25);
+}
+input[type='submit']
+{
+  background: rgb(61,61,80);
+  cursor: pointer;
+  border-radius: 3px;
+  height: 24px;
+  width: 120px;
+  position: absolute;
+  top: 310px;
+  left: 270px;
+}
+input[type='reset']
+{
+  background: rgb(61,61,80);
+  cursor: pointer;
+  border-radius: 3px;
+  height: 24px;
+  width: 120px;
+  position: absolute;
+  top: 310px;
+  left: 400px;
+}
+input[type='text'],input[type='email'],input[type='password']
+{
+  box-shadow: rgb(12,50,88);
+  width: 190px;
+  height: 19px;
+}
+.reg
+{
+  position: absolute;
+  top: -59px;
+  left: 50px;
+}
+#toping
+{
+  position: relative;
+  top: 10px;
+}
+.botto
+{
+border-radius: 3px;
+position: absolute;
+bottom: 3px;
+left: 3px;
+background-image: url(../images/sfs.jpg);
+background-repeat: no-repeat;
+background-size: 1900px 150px;
+padding: 6px 78px 6px 133px;
+}
