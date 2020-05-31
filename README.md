@@ -9,3 +9,20 @@ when employees come, they inform manager and he/she search who in a system and i
 -   PHP
 -   MySQL
 -   javascript
+
+## requirements to run the project on local machine
+
+-   Install web Server like Apache
+-   Install DBMS like MySQL
+    (Or you can install install XAMPP which contains all the above)
+
+## Guide
+
+```bash
+# open terminal and clone repository where xampp is installed, and go to path .../xampp/htdocs/
+git clone https://github.com/julesntare/TIME-RATE-WAGES-GENERATING-SYSTEM.git
+# Go into the repository
+# open browser and run localhost/phpmyadmin
+# import database from repository
+# run localhost/TIME-RATE-WAGES-GENERATING-SYSTEM
+```
