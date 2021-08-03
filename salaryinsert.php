@@ -1,5 +1,3 @@
 <?php
-mysql_connect('localhost','root','') or die(mysql_error());
-mysql_select_db('emptimemgtsys') or die(mysql_error());
-mysql_query('INSERT into salaries(id,username,started,ended) values()') or die(mysql_error());
-?>
+include('empconnect.php');
+mysqli_query($conn ,'INSERT into salaries(id,username,started,ended) values()') or die(mysqli_error($conn));

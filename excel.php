@@ -1,9 +1,9 @@
 <?php
-$connect=mysqli_connect('localhost','root','','emptimemgtsys');
+include('empconnect.php');
 $output='';
 if (isset($_POST['export_excel'])) {
 	$sql="SELECT firstname,lastname,username,gender,phone,jobtitle,salary from empreg";
-    $result=mysqli_query($connect,$sql);
+    $result=mysqli_query($conn,$sql);
     if (mysqli_num_rows($result)>0) {
     	$output.='
         <table border="1" cellpadding="2"  cellspacing="2">
@@ -35,4 +35,3 @@ if (isset($_POST['export_excel'])) {
   echo $output;
 }
 }
-?>
