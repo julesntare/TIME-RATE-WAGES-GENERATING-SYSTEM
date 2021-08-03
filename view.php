@@ -55,12 +55,11 @@ if (isset($_POST['search'])) {
 	$search_result = filterTable($query);
 } else {
 	$query = "SELECT * FROM `empreg` order by time DESC";
-	$search_result = filterTable($query);
+	$search_result = filterTable($conn, $query);
 }
-function filterTable($query)
+function filterTable($conn, $query)
 {
-	$connect = mysqli_connect("localhost", "root", "", "emptimemgtsys");
-	$filter_result = mysqli_query($connect, $query);
+	$filter_result = mysqli_query($conn, $query);
 	return $filter_result;
 }
 ?>
@@ -150,7 +149,7 @@ $records = mysqli_query($conn, $sql);
 					echo "There are   <button>" . $num . "</button>   Employees registered in the system";
 					echo "</span>";
 				}
-				$search_result = filterTable($query);
+				$search_result = filterTable($conn, $query);
 				while ($row = mysqli_fetch_array($search_result)) :
 					$id = $row['id'];
 					if ($i < 8) {
